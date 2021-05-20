@@ -28,24 +28,6 @@ public class Login_stepDefinition {
     }
 
 
-//    @When("User enters correct credentials")
-//    public void user_enters_correct_credentials() throws InterruptedException {
-//        String userName = ConfigurationReader.getProperty("UsernameTruckDriver1");
-//        String password = ConfigurationReader.getProperty("passwordVyTrack");
-//        loginPage.login(userName, password);
-//        Thread.sleep(3000);
-//
-//    }
-
-//    @Then("User name should be displayed")
-//    public void user_name_should_be_displayed() {
-//        String actualTitle = Driver.getDriver().getTitle();
-//        String expectedTitle = "Dashboard";
-//        Assert.assertEquals("Olmadi agam !!!", actualTitle, expectedTitle);
-//
-//    }
-
-
 
     @When("User enters correct username {string} and password {string}")
     public void userEntersCorrectUsernameAndPassword(String username, String password) {

@@ -17,7 +17,6 @@ import java.util.concurrent.TimeUnit;
 public class US4_VehicleOdometers_StepDefinition {
     Login_Page loginPage = new Login_Page();
     US4_VehicleOdometers_Page us4Page = new US4_VehicleOdometers_Page();
-    US6_VehicleCosts_Page us6Page = new US6_VehicleCosts_Page();
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
     Actions actions = new Actions(Driver.getDriver());
 
@@ -43,7 +42,6 @@ public class US4_VehicleOdometers_StepDefinition {
 
         us4Page.navigateTo(username, menu, subMenu);
         wait.until(ExpectedConditions.visibilityOf(us4Page.odometerText));
-//        Driver.getDriver().manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 
     }
 
